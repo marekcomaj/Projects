@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallerry trial</title>
+    <link rel="stylesheet" href="style.css">
+    <rel="stylesheet">
+</head>
+
+<body>
+    <h1>GALLERY</h1>
+    <div class="content">
+        <div onclick="side_slide(-1)" class="slide left">
+            <span class="fa fa-angle-left"></span>
+        </div>
+        <div class="images">
+            <img id="1" src="images/image1.jpg">
+            <p id="1">HI</p>
+            <img id="2" src="images/image2.jpg">
+            <img id="3" src="images/image3.jpg">
+            <img id="4" src="images/image4.jpg">
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+            <span class="fa fa-angle-right"></span>
+        </div>
+    </div>
+
+    <div id="thumbnails">
+        <div class="thumbnail">
+            <img src="images/image1.jpg" onclick= "displayThumbnail('1')">
+            <img src="images/image2.jpg" onclick= "displayThumbnail('2')">
+            <img src="images/image3.jpg" onclick= "displayThumbnail('3')">
+            <img src="images/image4.jpg" onclick= "displayThumbnail('4')">
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

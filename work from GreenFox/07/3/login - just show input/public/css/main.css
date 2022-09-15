@@ -1,0 +1,28 @@
+html,
+
+body{
+    background-color: coral;
+}
+
+#header{
+       /* Center the form on the page */
+       margin: 0 auto;
+       width: 400px;
+       /* Form outline */
+       border: 1px solid #CCC;
+       border-radius: 1em;
+       background-color: darkgrey;
+       text-align: center;
+}
+
+#login {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: darkgrey;
+  }
+  

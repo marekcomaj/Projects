@@ -1,0 +1,29 @@
+@import url("../reset.css");
+
+#container{
+    min-width: fit-content;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    padding: 10px;
+}
+
+#left{
+    width: 20%;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+#middle{
+    width: 60%;
+    height: 200px;
+    background-color: rgb(41, 25, 118);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#right{
+    width: 20%;
+    height: 200px;
+    background-color: greenyellow;
+}

@@ -1,0 +1,30 @@
+html,
+
+.storage{
+  display: inline-flex;
+  width: 1000vh;
+  height: 100vh;
+}
+
+.container {
+  justify-content: space-around;
+}
+
+.item {
+  min-width: 1000vh;
+  min-height: 150px;
+}
+
+.green {
+  background: rgb(81, 212, 0);
+}
+
+
+.yellow {
+  background: rgb(255, 214, 42);
+  height: 300px;
+}
+
+.purple {
+  background: rgb(176, 42, 255);
+}
