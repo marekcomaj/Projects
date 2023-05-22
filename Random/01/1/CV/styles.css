@@ -1,0 +1,66 @@
+
+body{
+
+    font-family: 'Oswald', sans-serif;
+   
+
+}
+
+
+#header{
+
+    background-repeat: no-repeat;
+    font-size: 200%;
+   
+}
+
+img{
+
+    width: 100%;
+
+}
+
+#intro{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    
+
+
+
+
+}
+
+
+
+#name{
+    
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    
+    
+}
+
+#text{
+
+    font-size: 200%;
+    padding: 10%;
+    padding-top: 50px;
+
+
+}
+
+#quote{
+
+    text-align: center;
+    border: 1px solid black;
+    margin: 0 25% 0 25%;
+    font-size: 350%;
+    color: white;
+    background-color: gray;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');

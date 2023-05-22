@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: EventListeners</title>
+</head>
+
+<body>
+    <button>after 2 seconds it will show message</button>
+    <p id="result">press the button</p>
+
+    <!-- You can work in the html or in a separate js file. Like:
+
+    <script>
+      On the click of the button,
+      Count the items in the list
+      And display the result in the result element.
+    </script>
+
+    OR
+
+    <script src="events-2.js"></script> -->
+
+    <script>
+        'use strict';
+
+        const button = document.querySelector('button');
+        var list = document.querySelectorAll("li");
+
+        const countList = () => {
+            setTimeout(() => {
+                document.getElementById("result").innerHTML = `2 seconds ellapsed`;
+            }, 2000);
+        };
+        // Try mouseover too
+        button.addEventListener('click', countList);
+        console.log(list.length)
+
+    </script>
+
+</body>
+
+</html>

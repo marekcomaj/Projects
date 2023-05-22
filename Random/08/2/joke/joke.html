@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Joke</title>
+</head>
+
+<body>
+  <div id="display">Click the button</div>
+  <button>Tell me a joke</button>
+</body>
+<script>
+
+  const JokeAPI = "http://api.icndb.com/jokes/random";
+
+  const button = document.querySelector('button');
+  
+
+  fetch(JokeAPI)
+    .then(response => response.json())
+    .then(json => { haha = (json.value.joke) })
+    .catch(gotErr)
+
+  function gotData(data) {
+    console.log(data);
+  }
+
+  function gotErr(err) {
+    console.log(err);
+  }
+
+  function abc() {
+    document.getElementById("display").innerHTML = haha;
+  }
+
+  button.addEventListener('click', abc)
+
+</script>
+
+</html>

@@ -1,0 +1,87 @@
+@import url("reset.css");
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  padding: 50px;
+  box-sizing: border-box;
+  background: rgb(61, 124, 213);
+}
+
+table {
+  width: calc(30vw);
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.7);
+  margin-left:auto; 
+  margin-right:auto;
+  /*
+  border-radius: 50px;
+  outline: 5px solid red;
+  border: 5px solid transparent;
+  */
+}
+
+th,
+td {
+  padding: 10px 5px;
+}
+
+th {
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.3em;
+  background: rgb(0, 0, 0);
+  color: rgb(215, 215, 215);
+  border-left: 1px solid gray;
+}
+
+th:first-child {
+  border-left: 0;
+}
+
+td {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  background: lightgray;
+  color: #555555;
+  text-shadow: 0 1px 1px #686868;
+}
+
+td:first-child {
+  border-left: 0;
+}
+
+tr:nth-child(even) td {
+  background: rgb(246, 246, 246);
+}
+
+/*
+td + td {
+  color: red;
+}
+
+td::after {
+  background: red;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  content: "";
+}
+*/
+
+@media (max-width: 500px) and (min-width: 300px) {
+  tr {
+    font-size: 0.5em;
+  }
+  th,
+  td {
+    padding: 8px 2px;
+  }
+}
